@@ -63,7 +63,7 @@ h3 {
         text-align: center;
         @extend .pd-10;
         @include border2px($text-border-color1, 30px);
-        background-color: $nav-backgroud-color;
+        background-color: $nav-background-color;
         position: fixed;
         z-index: 999;
         box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
@@ -126,7 +126,7 @@ nav .nav-ul .nav-listItem ul li {
 nav .nav-ul .nav-listItem:hover ul {
     display: block;
     @include border2px($text-border-color1, 30px);
-    background-color: $nav-backgroud-color;
+    background-color: $nav-background-color;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
 
