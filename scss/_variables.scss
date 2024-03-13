@@ -1,0 +1,24 @@
+/**
+ * Color Variables:
+ * These variables define various colors used throughout the stylesheet.
+ */
+$heading-button-color: rgb(186, 85, 211); // Color for heading buttons.
+$on-hover-color: rgb(139, 0, 139); // Color for elements on hover.
+$nav-background-color: rgb(0, 188, 212); // Background color for navigation elements.
+$text-border-color1: rgb(255, 255, 255); // Border color for text elements.
+$text-color2: rgb(0, 0, 128); // Secondary text color.
+$text-paragraph-color: rgb(0, 0, 0); // Color for paragraphs.
+
+/**
+  * Spacing Sizes:
+  * These variables define different spacing sizes used for margins and paddings.
+  * Used in loops to generate margin and padding utility classes.
+  */
+$spacing-sizes: 5, 10, 15, 20; // List of spacing sizes in pixels.
+
+/**
+  * Font Sizes:
+  * These variables define different font sizes used for text elements.
+  * Used in loops to generate font size utility classes.
+  */
+$font-sizes: 13, 14, 16, 18, 20, 24, 32, 50; // List of font sizes in pixels.

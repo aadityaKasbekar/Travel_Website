@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and title for the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <!-- Link to external stylesheet for styling -->
+    <link rel="stylesheet" href="dist/main.css">
+    <!-- Link to external font styling -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
+    <!-- JavaScript function to handle navigation -->
+    <script type="text/javascript">
+        function goToNewPage() {
+            var url = document.getElementById('service').value;
+            if (url != 'none') {
+                window.location = url;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Background Container1 -->
+    <div class="background-container1">
+
+        <!-- Header Section -->
+        <div class="header-container">
+            <!-- Heading for the travel website -->
+            <header class="header1 fs-32">
+                <h1>Travel</h1>
+            </header>
+        </div>
+
+        <!-- Navigation Section -->
+        <div class="navigation-container">
+            <!-- Navigation bar with links and a button -->
+            <nav>
+                <ul class="nav-ul">
+                    <!-- Home link -->
+                    <li class="nav-listItem"><a class="nextPage fs-24" href="index.html">Home</a></li>
+                    <!-- About link -->
+                    <li class="nav-listItem"><a class="nextPage fs-24" href="about.html" class="nav-link">About</a></li>
+                    <!-- Services dropdown with sub-links -->
+                    <li class="nav-listItem"><a class="nextPage fs-24" href="#">Services</a>
+                        <ul>
+                            <li class="nav-listItem"><a class="nextPage-Services"
+                                    href="#honeymoonPackageArticlePart">Honeymoon Packages</a></li>
+                            <li class="nav-listItem"><a class="nextPage-Services" href="tourPackages.html">Tour
+                                    Packages</a></li>
+                            <li class="nav-listItem"><a class="nextPage-Services" href="musicalEvents.html">Musical
+                                    Events</a></li>
+                            <li class="nav-listItem"><a class="nextPage-Services" href="#">Build Packages</a></li>
+                        </ul>
+                    </li>
+                    <!-- Upcoming Packages link -->
+                    <li class="nav-listItem"><a class="nextPage fs-24" href="upcomingPackages.html" class="nav-link">Upcoming
+                            Packages</a></li>
+                </ul>
+                <!-- Get in touch button -->
+                <button type="submit" class="get-in-touch-button fs-16">Get in touch</button>
+            </nav>
+        </div>
+
+        <!-- Center Content1 -->
+        <div class="centerContent1-container fs-50">
+            <!-- Text content with line breaks -->
+            <p>No matter where <br> you're going to,<br> we'll take you there</p>
+        </div>
+        <!-- Travel details form -->
+        <div class="travelDetails-container fs-18">
+            <form action="" method=GET>
+                <!-- Input field with animation effect -->
+                <div class="col-3 input-effect">
+                    <input class="effect-21 fs-16" type="text" placeholder="" pattern="[a-zA-Z0-9]+"
+                        title="Please enter valid alphanumeric text (minimum 3 characters)" required>
+                    <label>Where To ?</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <!-- Dropdown for travel type -->
+                <select name="travelType-select" id="travelType" accesskey="target">
+                    <option value="none" selected>Travel type</option>
+                    <option value="#">One Way</option>
+                    <option value="">Return</option>
+                </select>
+                <!-- Date input for duration -->
+                <label for="duration">Duration: </label>
+                <input id="duration" name="duration" type="date">
+            </form>
+        </div>
+        <!-- Image container within Center Content1 -->
+        <div class="centerContent1-Img-container">
+            <figure>
+                <!-- Image related to travel -->
+                <img src="assets/images/belowFormImage.png" alt="HTML">
+            </figure>
+        </div>
+        <!-- Image within Center Content1, separate from text and form -->
+        <img class="centerContent2-Img-container" src="assets/images/belowFormImage2.png" alt="HTML">
+    </div>
+
+    <!-- Background Container2 -->
+    <div class="background-container2">
+        <!-- Heading and category for services offered -->
+        <h3 class="fs-16">Category</h3>
+        <h1 class="background-container2-header2 fs-50">We offer best Services</h1>
+        <!-- Articles displaying different services -->
+        <div class="article-container">
+            <!-- Article 1: Guided Tours -->
+            <div class="article">
+                <img src="assets/images/icon1.png" alt="HTML">
+                <h3>Guided Tours</h3>
+                <p>This is the content of Article 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <!-- Article 2: Best Flight Options -->
+            <div class="article">
+                <img src="assets/images/icon2.png" alt="HTML">
+                <h3>Best Flight Options</h3>
+                <p>This is the content of Article 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <!-- Article 3: Religious Tours -->
+            <div class="article">
+                <img src="assets/images/icon3.png" alt="HTML">
+                <h3>Religious Tours</h3>
+                <p>This is the content of Article 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+            <!-- Article 4: Medical Insurance -->
+            <div class="article">
+                <img src="assets/images/icon4.png" alt="HTML">
+                <h3>Medical Insurance</h3>
+                <p>This is the content of Article 4. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            </div>
+        </div>
+        <!-- Container for Honeymoon Packages -->
+        <div class="honeymoonPackages-container">
+            <!-- Image of a couple -->
+            <div class="coupleImage">
+                <img src="assets/images/couplesImage.png" alt="HTML">
+            </div>
+            <!-- Article about Honeymoon Specials -->
+            <div id="honeymoonPackageArticlePart" class="honeymoonPackageArticle">
+                <h3>HONEYMOON SPECIALS</h3>
+                <h1 class="fs-50">OUR ROMANTIC TROPICAL DESTINATION</h1>
+                <!-- Lorem Ipsum content -->
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                    ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                    nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                    consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In
+                    enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt. Cras dapibus. Vivamus elementum. </p>
+                <!-- Button to view packages -->
+                <button type="submit" class="view-Package-btn fs-16">View Packages</button>
+            </div>
+        </div>
+        <!-- Container for getting favorite packages -->
+        <div class="get-Your-Fav-Packages-container">
+            <!-- Article about getting favorite packages -->
+            <div class="getYourFavPackagesArticle">
+                <h3>Fast & Easy</h3>
+                <h1 class="fs-50">Get Your Favourite Resort Bookings</h1>
+                <!-- List of steps with icons -->
+                <ul class="menu">
+                    <li>
+                        <div class="menu-option">
+                            <!-- Icon for choosing destination -->
+                            <div>
+                                <img src="assets/images/icon5.png" alt="HTML">
+                            </div>
+                            <!-- Sub-option with description -->
+                            <div class="menu-subOption">
+                                <h3 class="fs-16">Choose Destination</h3>
+                                <p class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-option">
+                            <!-- Icon for checking availability -->
+                            <div>
+                                <img src="assets/images/icon6.png" alt="HTML">
+                            </div>
+                            <!-- Sub-option with description -->
+                            <div class="menu-subOption2">
+                                <h3 class="fs-16">Check Availability</h3>
+                                <p class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                    dolor.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-option">
+                            <!-- Icon for starting the journey -->
+                            <div>
+                                <img src="assets/images/icon7.png" alt="HTML">
+                            </div>
+                            <!-- Sub-option with description -->
+                            <div class="menu-subOption2">
+                                <h3 class="fs-16">Let's Go</h3>
+                                <p class="fs-13">Lorem ipsum dolor
+                                    sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- Image of a trip to Hawaii -->
+            <div class="trip-to-Hawai">
+                <img src="assets/images/trip-To-Hawai.png" alt="HTML">
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Container3 -->
+    <div class="background-container3">
+        <!-- Image of the Statue of Liberty -->
+        <img src="assets/images/statueOfLibertyImage.png" alt="HTML">
+    </div>
+
+    <!-- Background Container4 -->
+    <div class="background-container4">
+        <!-- Grid container for displaying Europe Sightseeing Tours promotion -->
+        <div class="grid-container">
+            <!-- Article about Europe Sightseeing Tours promotion -->
+            <div class="europePackageArticle">
+                <h3>PROMOTIONS</h3>
+                <h1 class="fs-50">We Provide You Best Europe Sightseeing Tours</h1>
+                <!-- Lorem Ipsum content -->
+                <p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+                    quis, sem.</p>
+                <!-- Button to view packages -->
+                <button type="submit" class="view-Package-btn fs-16">View Packages</button>
+            </div>
+        </div>
+        <!-- Grid container for displaying an image of Paris -->
+        <div class="grid-container">
+            <div class="parisImage">
+                <img src="assets/images/parisImage.png" alt="">
+            </div>
+        </div>
+        <!-- Grid container for displaying Europe city images -->
+        <div class="grid-container">
+            <div class="europeCityImages">
+                <!-- Three icons representing Europe cities -->
+                <div>
+                    <img src="assets/images/icon8.png" alt="HTML">
+                </div>
+                <div>
+                    <img src="assets/images/icon9.png" alt="HTML">
+                </div>
+                <div>
+                    <img src="assets/images/icon10.png" alt="HTML">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Container5 -->
+    <div class="background-container5">
+        <!-- Container for exploring desert with a button -->
+        <div class="explore-Desert-Container">
+            <h3>Promotion</h3>
+            <h1>Explore Desert</h1>
+            <!-- Button to view desert packages -->
+            <button type="submit" class="view-Package-btn-Ver2 fs-16">View Packages</button>
+        </div>
+        <!-- Container for exploring ocean with a button -->
+        <div class="explore-Ocean-Container">
+            <h3>Promotion</h3>
+            <h1>Explore Ocean</h1>
+            <!-- Button to view ocean packages -->
+            <button type="submit" class="view-Package-btn-Ver2 fs-16">View Packages</button>
+        </div>
+    </div>
+
+    <!-- Background Container6 -->
+    <div class="background-container6">
+        <!-- Container for Trendy Tour Packages -->
+        <div class="container-title">
+            <h3>TRENDY</h3>
+            <h1 class="fs-50">Our Trending Tour Packages</h1>
+        </div>
+        <!-- Container for displaying trending tour packages -->
+        <div class="container-body">
+            <!-- Section for the first trending package -->
+            <section class="grid-body-container">
+                <!-- Image of the first trending package -->
+                <img src="assets/images/trendyPackage1Image.png" alt="HTML">
+                <!-- Pricing information for the first package -->
+                <h2>1,000 $</h2>
+                <h3>1,200 $</h3>
+                <!-- Description of the first package -->
+                <p class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p>
+                <!-- Button to explore the first package -->
+                <button type="submit" class="explore-Now-btn fs-16">Explore Now</button>
+            </section>
+            <!-- Section for the second trending package -->
+            <section class="grid-body-container">
+                <!-- Image of the second trending package -->
+                <img src="assets/images/trendyPackage2Image.png" alt="HTML">
+                <!-- Pricing information for the second package -->
+                <h2>1,223 $</h2>
+                <h3>1,300 $</h3>
+                <!-- Description of the second package -->
+                <p class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p>
+                <!-- Button to explore the second package -->
+                <button type="submit" class="explore-Now-btn fs-16">Explore Now</button>
+            </section>
+            <!-- Section for the third trending package -->
+            <section class="grid-body-container">
+                <!-- Image of the third trending package -->
+                <img src="assets/images/trendyPackage3Image.png" alt="HTML">
+                <!-- Pricing information for the third package -->
+                <h2>1,200 $</h2>
+                <h3>1,400 $</h3>
+                <!-- Description of the third package -->
+                <p class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa.
+                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur</p>
+                <!-- Button to explore the third package -->
+                <button type="submit" class="explore-Now-btn fs-16">Explore Now</button>
+            </section>
+        </div>
+    </div>
+
+    <!-- Background Container7 -->
+    <div class="background-container7">
+        <!-- Container for client feedback -->
+        <div class="container7-title">
+            <h3>PROMOTION</h3>
+            <h1 class="fs-50">See What Our Client Say About Us</h1>
+        </div>
+        <!-- Feedback carousel section end -->
+        <div class="carouselsection">
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper">
+
+                            <div class="feedback">
+                                <!-- Icon representing client feedback -->
+                                <div>
+                                    <img src="assets/images/icon11.png" alt="HTML">
+                                </div>
+                                <!-- Feedback content including a quote and client information -->
+                                <div class="feedback-content">
+                                    <blockquote class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                        Aenean massa. Cum sociis natoque
+                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                                        vel, aliquet nec, vulputate eget, arcu.</blockquote>
+                                    <p class="fs-13"><strong>Chritine Beckham - Designer</strong></p>
+                                </div>
+                            </div>
+
+                            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+                        </div>
+                    </li>
+                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper">
+
+                            <div class="feedback">
+                                <!-- Icon representing client feedback -->
+                                <div>
+                                    <img src="assets/images/icon11.png" alt="HTML">
+                                </div>
+                                <!-- Feedback content including a quote and client information -->
+                                <div class="feedback-content">
+                                    <blockquote class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                        Aenean massa. Cum sociis natoque
+                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                                        vel, aliquet nec, vulputate eget, arcu.</blockquote>
+                                    <p class="fs-13"><strong>Chritine Beckham - Designer</strong></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper">
+
+                            <div class="feedback">
+                                <!-- Icon representing client feedback -->
+                                <div>
+                                    <img src="assets/images/icon11.png" alt="HTML">
+                                </div>
+                                <!-- Feedback content including a quote and client information -->
+                                <div class="feedback-content">
+                                    <blockquote class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                        Aenean massa. Cum sociis natoque
+                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                                        vel, aliquet nec, vulputate eget, arcu.</blockquote>
+                                    <p class="fs-13"><strong>Chritine Beckham - Designer</strong></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+                    </li>
+                    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+                        <div class="carousel__snapper">
+
+                            <div class="feedback">
+                                <!-- Icon representing client feedback -->
+                                <div>
+                                    <img src="assets/images/icon11.png" alt="HTML">
+                                </div>
+                                <!-- Feedback content including a quote and client information -->
+                                <div class="feedback-content">
+                                    <blockquote class="fs-13">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                                        Aenean massa. Cum sociis natoque
+                                        penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec,
+                                        pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla
+                                        vel, aliquet nec, vulputate eget, arcu.</blockquote>
+                                    <p class="fs-13"><strong>Chritine Beckham - Designer</strong></p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+                    </li>
+                </ol>
+                <aside class="carousel__navigation">
+                    <ol class="carousel__navigation-list">
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+                        </li>
+                        <li class="carousel__navigation-item">
+                            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+                        </li>
+                    </ol>
+                </aside>
+            </section>
+        </div>
+        <!-- Feedback carousel section end -->
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container1">
+            <!-- Top section with company logo, description, and social media links -->
+            <div class="footer-top">
+                <!-- Company logo and description -->
+                <div class="footer-list">
+                    <a href="#" class="logo fs-24">Travel</a>
+                    <p>Travel helps companies manage payments easily.</p>
+                    <!-- Social media links with icons -->
+                    <ul class="social-list">
+                        <li>
+                            <a href="#" class="social-link fs-20">
+                                <ion-icon name="logo-facebook" class="icon1"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link fs-20">
+                                <ion-icon name="logo-twitter" class="icon2"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link fs-20">
+                                <ion-icon name="logo-instagram" class="icon3"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link fs-20">
+                                <ion-icon name="logo-linkedin" class="icon4"></ion-icon>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="social-link fs-20">
+                                <ion-icon name="logo-google" class="icon5"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Section with company-related links -->
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title fs-18">Company</p>
+                    </li>
+                    <li><a href="about.html" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Careers</a></li>
+                    <li><a href="#" class="footer-link">Blog</a></li>
+                    <li><a href="#" class="footer-link">Pricing</a></li>
+                </ul>
+                <!-- Section with destination-related links -->
+                <ul class="footer-list">
+                    <li>
+                        <p class="footer-list-title fs-18">Destinations</p>
+                    </li>
+                    <li><a href="#" class="footer-link">Maldives</a></li>
+                    <li><a href="#" class="footer-link">Los Angeles</a></li>
+                    <li><a href="#" class="footer-link">Las Vegas</a></li>
+                    <li><a href="#" class="footer-link">Toronto</a></li>
+                </ul>
+                <!-- Section for newsletter subscription -->
+                <div class="footer-list">
+                    <p class="fs-18">Join Our Newsletter</p>
+                    <!-- Form for submitting email for newsletter -->
+                    <form action="" class="newsletter-form">
+                        <input type="email" name="email" required placeholder="Email address" class="newsletter-input fs-14"
+                            pattern="[a-zA-Z0-9._%+-]+@+[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                            title="Please enter a valid email address ending with @email.com">
+                        <button type="submit" class="btn btn-primary fs-14"><strong>Subscribe</strong></button>
+                    </form>
+                    <p>
+                        <sup>*</sup>Will send you weekly updates for your better tour packages.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Bottom section with copyright information -->
+        <div class="footer-container2">
+            <p class="copyright">
+                &copy; Copyright @ <a href="#" class="copyright-link"> Xpro 2022</a>. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <!-- Footer container with sections for company information and links -->
+    <!-- Script for loading Ionicons library -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <!-- Fallback script for non-module browsers -->
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
