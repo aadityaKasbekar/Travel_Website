@@ -1,8 +1,6 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/J4-IMa8v)
+# Travel Website
 
-# HTML CSS Assignment 4
-
-Welcome to Assignment 4 of the HTML CSS project! In this assignment, we'll be enhancing the web page created in Assignment 3 by adding a layout as per the provided mock image. Additionally, we'll be converting all CSS to SCSS syntax and organizing it into modular files. The goal is to learn about CSS positioning, Grid layout, Flexbox, and SCSS features like variables, mixins, inheritance, control statements, functions, and operators.
+Welcome to Travel Website of the HTML CSS project! In this assignment, we'll be enhancing the web page created in assignment by adding a layout as per the provided mock image. Additionally, we'll be converting all CSS to SCSS syntax and organizing it into modular files. The goal is to learn about CSS positioning, Grid layout, Flexbox, and SCSS features like variables, mixins, inheritance, control statements, functions, and operators.
 
 ## Installing Sass Package Locally <a href="https://sass-lang.com/install/">(click here!)</a>
 
